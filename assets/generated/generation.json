@@ -1,0 +1,31 @@
+{
+  "models": {
+    "game_design": "gpt-5.5",
+    "image_generation": "gpt-image-1"
+  },
+  "design": {
+    "title": "DevDay Night Run",
+    "tagline": "Cross SF. Catch the ticket.",
+    "intro": "Deliver the early DevDay ticket before sunrise. Collect all three signals.",
+    "win": "Ticket delivered. DevDay unlocked.",
+    "lose": "Dawn caught you. Run again.",
+    "fragments": [
+      "GPT",
+      "Image",
+      "Ship"
+    ],
+    "palette": {
+      "bg": "#07111f",
+      "ink": "#e8f1ff",
+      "accent": "#ffb84d",
+      "danger": "#ff4d6d",
+      "signal": "#51ffd6"
+    },
+    "background_prompt": "Compact pixel-art night scene for a side-scrolling browser game set in San Francisco: steep streets, cable-car tracks, bay mist, distant bridge silhouettes, warm apartment windows, moonlit clouds, subtle neon reflections, dark blue palette with teal signal glow and amber highlights. No logos, no copyrighted characters, no real event branding.",
+    "atlas_prompt": "Pixel-art sprite atlas for a compact browser runner game: small courier runner with a glowing ticket, three collectible signal shards labeled only in UI as GPT, Image, Ship, traffic cones, fog puffs, streetlights, crosswalk stripes, cable-car rail obstacles, finish mailbox, sparkle effects. Transparent background, cohesive night palette, no logos, no copyrighted characters, no real event branding."
+  },
+  "image_prompts": {
+    "background": "Compact pixel-art night scene for a side-scrolling browser game set in San Francisco: steep streets, cable-car tracks, bay mist, distant bridge silhouettes, warm apartment windows, moonlit clouds, subtle neon reflections, dark blue palette with teal signal glow and amber highlights. No logos, no copyrighted characters, no real event branding. Render as a crisp 16:9 game background, no text, no logos, no UI, high contrast lanes and landmarks, suitable for canvas gameplay.",
+    "atlas": "Pixel-art sprite atlas for a compact browser runner game: small courier runner with a glowing ticket, three collectible signal shards labeled only in UI as GPT, Image, Ship, traffic cones, fog puffs, streetlights, crosswalk stripes, cable-car rail obstacles, finish mailbox, sparkle effects. Transparent background, cohesive night palette, no logos, no copyrighted characters, no real event branding. Create a clean 2x2 sprite atlas on a transparent-looking plain dark background: top-left courier badge/player, top-right signal fragment collectible, bottom-left fog/hazard, bottom-right glowing portal/checkpoint. No text, no logos, centered objects, strong silhouettes."
+  }
+}

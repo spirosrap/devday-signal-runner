@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DevDay Night Run</title>
+    <meta
+      name="description"
+      content="A tiny static browser game generated with GPT-5.5 and Image Gen for an OpenAI DevDay 2026 submission."
+    />
+    <link rel="icon" href="data:," />
+    <link rel="preload" href="assets/generated/background.png" as="image" />
+    <link rel="preload" href="assets/generated/atlas.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell" aria-label="DevDay Night Run game">
+      <section class="game-frame">
+        <div class="topbar">
+          <div>
+            <h1>DevDay Night Run</h1>
+            <p>Cross SF. Catch the ticket.</p>
+          </div>
+          <div class="status" aria-live="polite">
+            <span id="distance">0 m</span>
+            <span id="clock">45</span>
+          </div>
+        </div>
+
+        <div class="stage-wrap">
+          <canvas id="game" width="960" height="540" aria-label="Playable runner game"></canvas>
+          <div class="overlay" id="overlay">
+            <div class="overlay-panel">
+              <p id="message">Deliver the early DevDay ticket before sunrise. Collect all three signals.</p>
+              <button id="startButton" type="button">Start run</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottombar">
+          <div class="fragments" id="fragments" aria-label="Collected signal fragments"></div>
+          <button class="ghost-button" id="restartButton" type="button">Restart</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js" type="module"></script>
+  </body>
+</html>
