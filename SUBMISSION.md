@@ -5,7 +5,7 @@ Built DevDay Night Run, a tiny playable browser runner for catching an early Dev
 
 GPT-5.5 generated the game spec, copy, palette, and Image Gen prompts. Image Gen created the SF night-run background and sprite atlas. The final game is static and runs on GitHub Pages.
 
-Playable: <GitHub Pages URL>
+Playable: https://spirosrap.github.io/devday-signal-runner/
 
 #OpenAIDevDay2026
 ```
